@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plinko Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Plinko Game</h1>
+    <div class="plinko-board">
+        <div class="row"><div class="peg"></div></div>
+        <div class="row"><div class="peg"></div><div class="peg"></div></div>
+        <div class="row"><div class="peg"></div><div class="peg"></div><div class="peg"></div></div>
+
+        <div class="slots">
+            <div class="slot" data-points="100">100</div>
+            <div class="slot" data-points="200">200</div>
+            <div class="slot" data-points="300">300</div>
+            <div class="slot" data-points="400">400</div>
+        </div>
+
+        <div class="ball" id="ball"></div>
+    </div>
+
+    <button onclick="dropBall()">Drop Ball</button>
+    <p id="scoreDisplay">Score: 0</p>
+
+    <!-- Sound -->
+    <audio id="bounceSound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
